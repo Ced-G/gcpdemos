@@ -1,4 +1,4 @@
-export GOOGLE_CLOUD_PROJECT_ID=gab-devops-1 
+export GOOGLE_CLOUD_PROJECT_ID=qwiklabs-gcp-00-db505c98ed81 
 export GOOGLE_CLOUD_REGION=us-central1
 export ARTIFACT_REPO=$GOOGLE_CLOUD_REGION-docker.pkg.dev/$GOOGLE_CLOUD_PROJECT_ID/devopsdemo1repo
 

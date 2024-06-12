@@ -31,7 +31,7 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 llm = VertexAI(model_name="gemini-1.5-flash-preview-0514")
 
 retriever = VertexAISearchRetriever(
-    project_id="gab-devops-1",
+    project_id="qwiklabs-gcp-00-db505c98ed81",
     location_id="global",
     data_store_id="my-datastore-1_1714069761495",
     get_extractive_answers=True,

@@ -1,4 +1,4 @@
-export GOOGLE_CLOUD_PROJECT_ID=gab-devops-1 
+export GOOGLE_CLOUD_PROJECT_ID=qwiklabs-gcp-00-db505c98ed81 
 export GOOGLE_CLOUD_REGION=us-central1
 export GOOGLE_CLOUD_ZONE=us-central1-a
 export SKAFFOLD_DEFAULT_REPO=$GOOGLE_CLOUD_REGION-docker.pkg.dev/$GOOGLE_CLOUD_PROJECT_ID/devopsdemo1repo
@@ -146,6 +146,6 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT, UPDATE, INSERT, DELETE O
 SELECT usename FROM pg_catalog.pg_user;
 show search_path;
 ALTER DATABASE "quotes-app-db" SET SEARCH_PATH to default;
-GRANT ALL ON SCHEMA public TO "cloudsql-sa@gab-devops-1.iam";
-#grant usage on schema public to "cloudsql-sa@gab-devops-1.iam";
-#grant create on schema public to "cloudsql-sa@gab-devops-1.iam";
+GRANT ALL ON SCHEMA public TO "cloudsql-sa@qwiklabs-gcp-00-db505c98ed81.iam";
+#grant usage on schema public to "cloudsql-sa@qwiklabs-gcp-00-db505c98ed81.iam";
+#grant create on schema public to "cloudsql-sa@qwiklabs-gcp-00-db505c98ed81.iam";

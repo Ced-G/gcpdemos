@@ -43,7 +43,7 @@ metadata:
  name: dev-run
 description: development
 run:
- location: projects/gab-devops-1/locations/us-central1
+ location: projects/qwiklabs-gcp-00-db505c98ed81/locations/us-central1
 ---
 apiVersion: deploy.cloud.google.com/v1
 kind: Target
@@ -51,4 +51,4 @@ metadata:
  name: prod-run
 description: production
 run:
- location: projects/gab-devops-1/locations/us-central1
+ location: projects/qwiklabs-gcp-00-db505c98ed81/locations/us-central1

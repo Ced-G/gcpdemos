@@ -227,7 +227,7 @@ func getDB() (*sql.DB, func() error) {
 
 	//dsn := fmt.Sprintf("user=%s dbname=%s sslmode=disable", os.Getenv("DB_IAM_USER"), os.Getenv("DB_NAME"))
 	dsn := fmt.Sprintf("host=%s user=%s dbname=%s sslmode=disable", os.Getenv("INSTANCE_CONNECTION_NAME"), os.Getenv("DB_IAM_USER"), os.Getenv("DB_NAME"))
-	//dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s sslmode=disable", "projects/gab-devops-1/locations/us-central1/clusters/devopsdemo-alloydb-cluster-1/instances/devopsdemo-alloydb-instance-1", "postgres","password", os.Getenv("DB_NAME"))
+	//dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s sslmode=disable", "projects/qwiklabs-gcp-00-db505c98ed81/locations/us-central1/clusters/devopsdemo-alloydb-cluster-1/instances/devopsdemo-alloydb-instance-1", "postgres","password", os.Getenv("DB_NAME"))
 
   	log.Println("instance: ", os.Getenv("INSTANCE_CONNECTION_NAME"))
   	log.Println("dsn: ", dsn)  

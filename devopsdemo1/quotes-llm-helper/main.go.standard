@@ -156,7 +156,7 @@ func LLMHelperHandler(c *gin.Context) {
 
 	region := "us-central1"
 	modelName := "text-bison@001"
-	projectId := "gab-devops-1"
+	projectId := "qwiklabs-gcp-00-db505c98ed81"
 
 	palmClient := NewClient(region, projectId, modelName, c)
 

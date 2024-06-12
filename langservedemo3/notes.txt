@@ -1,4 +1,4 @@
-export GOOGLE_CLOUD_PROJECT_ID=gab-devops-1 
+export GOOGLE_CLOUD_PROJECT_ID=qwiklabs-gcp-00-db505c98ed81 
 export GOOGLE_CLOUD_REGION=us-central1
 export GOOGLE_CLOUD_ZONE=us-central1-a
 
@@ -8,13 +8,13 @@ langchain app new my-demo --package vertexai-chuck-norris
 
 pip install -U langchain-google-vertexai
 pip show langchain-google-vertexai 
-gcloud auth application-default set-quota-project gab-devops-1
+gcloud auth application-default set-quota-project qwiklabs-gcp-00-db505c98ed81
 
 #pip install langchainhub
 
 langchain serve
 langchain serve --port=8080
-gcloud run deploy --service-account llm-sa@gab-devops-1.iam.gserviceaccount.com
+gcloud run deploy --service-account llm-sa@qwiklabs-gcp-00-db505c98ed81.iam.gserviceaccount.com
 
 https://github.com/langchain-ai/langchain/blob/master/templates/vertexai-chuck-norris/vertexai_chuck_norris/chain.py
 ins using 'from langchain_community.chat_models import ChatVertexAI'

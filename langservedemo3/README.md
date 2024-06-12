@@ -98,5 +98,5 @@ gcloud projects add-iam-policy-binding $GOOGLE_CLOUD_PROJECT_ID \
 
 Run on cloud run 
 ```
-gcloud run deploy --service-account vertex-search-sa@gab-devops-1.iam.gserviceaccount.com
+gcloud run deploy --service-account vertex-search-sa@qwiklabs-gcp-00-db505c98ed81.iam.gserviceaccount.com
 ```
